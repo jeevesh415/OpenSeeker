@@ -27,11 +27,9 @@ OpenSeeker is an open-source search agent system that democratizes access to fro
 
 
 ---
-
 ### 🌟 Key Achievement
 
 > **OpenSeeker represents the first work by a purely academic team to achieve state-of-the-art performance on frontier search benchmarks while simultaneously open-sourcing the full training data.**
-
 ---
 
 ## Quick Start
