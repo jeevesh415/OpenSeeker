@@ -47,6 +47,15 @@ export JINA_API_KEYS="${JINA_API_KEYS:-YOUR_JINA_API_KEY}"
 # Get your API key from https://serper.dev/
 export SERPER_KEY_ID="${SERPER_KEY_ID:-YOUR_SERPER_API_KEY}"
 
+# If you want to use Tavily for search, you can configure the following parameters. Use Serper by default.
+# ============================================
+# Tavily API Configuration (for search.py)
+# ============================================
+# Get your API key from https://app.tavily.com/
+export TAVILY_API_KEY="${TAVILY_API_KEY:-YOUR_TAVILY_API_KEY}"
+# Search provider: 'serper' (default) or 'tavily'
+export SEARCH_PROVIDER="${SEARCH_PROVIDER:-serper}"
+
 # ============================================
 # Other Configuration
 # ============================================
@@ -69,4 +78,6 @@ echo "SUMMARY_API_URL: $SUMMARY_API_URL"
 echo "SUMMARY_API_KEY: ${SUMMARY_API_KEY:0:20}..."
 echo "JINA_API_KEYS: ${JINA_API_KEYS:0:20}..."
 echo "SERPER_KEY_ID: ${SERPER_KEY_ID:0:20}..."
+echo "TAVILY_API_KEY: ${TAVILY_API_KEY:0:20}..."
+echo "SEARCH_PROVIDER: $SEARCH_PROVIDER"
 echo "============================================"
