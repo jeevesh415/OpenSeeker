@@ -30,7 +30,7 @@ MarkupSafe==3.0.3
 multidict==6.7.1
 numpy==2.2.6
 openai==2.26.0
-packaging @ file:///home/task_176104877067765/conda-bld/packaging_1761049113113/work
+packaging==26.0
 pillow==12.1.1
 propcache==0.4.1
 pycparser==3.0
