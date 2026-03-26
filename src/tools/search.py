@@ -162,10 +162,10 @@ class Search(BaseTool):
             return "[Search] Invalid request format: Input must be a JSON object containing 'query' field"
         
         if isinstance(query, str):
-            # 单个查询
+            # Single query
             response = self._dispatch_search(query)
         else:
-            # 多个查询
+            # Multiple queries
             assert isinstance(query, List)
             responses = []
             for q in query:
