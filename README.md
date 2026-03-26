@@ -18,7 +18,7 @@
 
 ## 📰 News
 
-- **2026.03.20** 📣 We have a new batch of higher-quality, more challenging data — contact us for more information.
+- **2026.03.20** 📣 We’ve released a new batch of higher-quality, more challenging data. For details, please contact us at yr991129@sjtu.edu.cn.
 - **2026.03.17** 🚀 We open-sourced OpenSeeker-v1 (all data and models). Using **11.7K** training examples, we fine-tuned Qwen3-30B-A3B-Thinking-2507 and achieved scores of **48.4** on BrowseComp-ZH, **29.5** on BrowseComp, **74.0** on xbench-DeepSearch, and **59.4** on WideSearch.
 
 ## Overview
