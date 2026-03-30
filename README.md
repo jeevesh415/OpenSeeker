@@ -1,7 +1,7 @@
 # OpenSeeker: Democratizing Frontier Search Agents by Fully Open-Sourcing Training Data
 
 <div align="center">
-  <a href="https://arxiv.org/abs/2603.15594">
+  <a href="https://huggingface.co/papers/2603.15594">
     <img src="https://img.shields.io/badge/arXiv-2603.15594-b31b1b" alt="arXiv"/>
   </a>
   <a href="https://huggingface.co/datasets/OpenSeeker/OpenSeeker-v1-Data">
