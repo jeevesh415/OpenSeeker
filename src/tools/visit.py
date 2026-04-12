@@ -10,7 +10,7 @@ import tiktoken
 VISIT_SERVER_TIMEOUT = int(os.getenv("VISIT_SERVER_TIMEOUT", 200))
 WEBCONTENT_MAXLENGTH = int(os.getenv("WEBCONTENT_MAXLENGTH", 150000))
 
-# 读取 Summary API 配置（一次传参）
+# Load Summary API configuration (one-time parameters)
 SUMMARY_API_URL = os.getenv("SUMMARY_API_URL", "YOUR_SUMMARY_API_URL")
 SUMMARY_API_KEY = os.getenv("SUMMARY_API_KEY", "YOUR_SUMMARY_API_KEY")
 SUMMARY_MODEL_NAME = os.getenv("SUMMARY_MODEL_NAME", "YOUR_SUMMARY_MODEL_NAME")

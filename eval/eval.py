@@ -245,7 +245,7 @@ if __name__ == "__main__":
             )
         for obj in new_scored:
             item_idx = obj.get("item_index")
-            # 只更新成功评估的项目（score 为 0 或 1）
+            # Only update successfully evaluated items (score is 0 or 1)
             if item_idx is not None and _is_clean_01(obj.get("score")):
                 item_idx2scored[item_idx] = obj
 
@@ -331,7 +331,7 @@ if __name__ == "__main__":
     with open(tmp_path, "w", encoding="utf-8") as f:
         f.write(json.dumps(summary, ensure_ascii=False) + "\n")
         for item in processed_data:
-            # 只保存成功评估的项目（score 为 0 或 1）
+            # Only persist successfully evaluated items (score is 0 or 1)
             if not _is_clean_01(item.get("score")):
                 continue
             if isinstance(item, dict) and item.get("type") != "item":

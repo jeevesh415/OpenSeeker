@@ -49,7 +49,7 @@ def _print_tool_call(tool_name: str, tool_args: Any, tool_response: str) -> None
       [tool] args=...
       [tool] response=...
     """
-    # 工具日志配置常量
+    # Tool log configuration constants
     TOOL_LOG_MAX_CHARS = 800
     max_chars = TOOL_LOG_MAX_CHARS
     c = _tool_color(tool_name)
@@ -696,7 +696,21 @@ def solve_query_with_tools(
 
 
 if __name__ == "__main__":
-    q = os.environ.get("OPENSEEKER_QUERY", "一位工作地点位于法兰西第五共和国境内的学者，其原生国籍对应一个横跨欧亚大陆的联邦制国家。该学者获得了一项国际科学奖项，该奖项的设立时间处于第二次世界大战爆发之后、但在人类首次成功发射人造地球卫星之前。该奖项的资金来源于一对实业家夫妇的私人基金会，该奖项的常见名称即由这对夫妇的姓氏构成。该奖项的表彰领域之一，其名称与一个研究物体运动规律、且其基础原理被认为由一位提出行星运动三大定律的早期现代欧洲科学家所系统阐述的经典物理学分支名称相同。该学者的核心工作领域，关联于一种用于研究依赖于可变参数的数学对象族的概念性数学构造，这种构造在概念上与数学中的某种特定函数类存在相似性。此外，该学者的工作还与一种重要的数学对象理论紧密相关，这种数学对象的现代形式化定义，是在二十世纪上半叶由一位法国数学家与一种涉及特定二元运算的代数结构概念一同被引入数学体系的。请问这位学者的姓氏是什么？")
+    q = os.environ.get(
+        "OPENSEEKER_QUERY",
+        "A scholar based in France originally holds the nationality of a federal state spanning Europe and Asia. "
+        "This scholar received an international science prize established after the outbreak of World War II but "
+        "before the first successful launch of an artificial Earth satellite. The prize is funded by a private "
+        "foundation created by an industrialist couple, and the prize is commonly named after their surname. "
+        "One recognized field of the prize shares its name with a classical branch of physics studying the laws of "
+        "motion, whose foundational principles are often attributed to an early modern European scientist who "
+        "formulated three laws of planetary motion. The scholar's core research area relates to a conceptual "
+        "mathematical construction for studying families of mathematical objects depending on parameters, which is "
+        "conceptually similar to a specific class of functions in mathematics. In addition, the scholar's work is "
+        "closely connected to an important theory of mathematical objects whose modern formal definition was "
+        "introduced in the first half of the 20th century by a French mathematician together with a concept of an "
+        "algebraic structure involving a particular binary operation. What is the scholar's surname?"
+    )
     res = solve_query_with_tools(q, print_stream=True)
     result_dir = os.path.join(_THIS_DIR, "..", "result/test")
     os.makedirs(result_dir, exist_ok=True)
